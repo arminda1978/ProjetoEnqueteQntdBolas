@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!-- update the version number as needed -->
+    <!--<script defer src="/__/firebase/6.4.0/firebase-app.js"></script>-->
+    <!--&lt;!&ndash; include only the Firebase features as you need &ndash;&gt;-->
+    <!--<script defer src="/__/firebase/6.4.0/firebase-auth.js"></script>-->
+    <!--<script defer src="/__/firebase/6.4.0/firebase-database.js"></script>-->
+    <!--<script defer src="/__/firebase/6.4.0/firebase-messaging.js"></script>-->
+    <!--<script defer src="/__/firebase/6.4.0/firebase-storage.js"></script>-->
+    <!--&lt;!&ndash; initialize the SDK after all desired features are loaded &ndash;&gt;-->
+    <!--<script defer src="/__/firebase/init.js"></script>-->
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-messaging.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-functions.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#config-web-app -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCU3aDxWpxzPrb9Oafloogjx6Odk4PtjuU",
+            authDomain: "quantidadebolas.firebaseapp.com",
+            databaseURL: "https://quantidadebolas.firebaseio.com",
+            projectId: "quantidadebolas",
+            storageBucket: "",
+            messagingSenderId: "459854621094",
+            appId: "1:459854621094:web:4fb9d035ac2904d4"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+</head>
+<body>
+
+  <h1>Adivinhe a quantidade de bolas</h1>
+
+  <img src="https://http2.mlstatic.com/D_NQ_NP_669541-MLB31216715063_062019-Q.jpg" alt="Pote com bolas">
+  <br>
+
+  <form action="">
+      <input type="number" id="quantidadeBolas">
+      <button id="enviar">Enviar</button>
+  </form>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="js/enquete.js"></script>
+
+</body>
+</html>

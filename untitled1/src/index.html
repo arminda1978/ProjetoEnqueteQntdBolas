@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title>
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="bootstrap-social-gh-pages/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap-social-gh-pages/assets/css/font-awesome.css">
+    <link rel="stylesheet" href="bootstrap-social-gh-pages/bootstrap-social.css">
+    <!-- update the version number as needed -->
+    <!--<script defer src="/__/firebase/6.4.0/firebase-app.js"></script>-->
+    <!-- include only the Firebase features as you need -->
+    <!--<script defer src="/__/firebase/6.4.0/firebase-auth.js"></script>-->
+    <!--<script defer src="/__/firebase/6.4.0/firebase-database.js"></script>-->
+    <!--<script defer src="/__/firebase/6.4.0/firebase-messaging.js"></script>-->
+    <!--<script defer src="/__/firebase/6.4.0/firebase-storage.js"></script>-->
+    <!-- initialize the SDK after all desired features are loaded -->
+    <!--<script defer src="/__/firebase/init.js"></script>-->
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-messaging.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-functions.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#config-web-app -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCU3aDxWpxzPrb9Oafloogjx6Odk4PtjuU",
+        authDomain: "quantidadebolas.firebaseapp.com",
+        databaseURL: "https://quantidadebolas.firebaseio.com",
+        projectId: "quantidadebolas",
+        storageBucket: "",
+        messagingSenderId: "459854621094",
+        appId: "1:459854621094:web:4fb9d035ac2904d4"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <style media="screen">
+      body {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      #login-google {
+        width: 25%;
+        margin: 5%;
+        margin-left: 0px;
+      }
+
+      #formulario {
+        margin-top: 10px;
+      }
+
+    </style>
+  </head>
+  <body>
+
+  <form id="formulario">
+    <div class="form-group">
+      <label for="nome">Nome</label>
+      <input type="text" class="form-control" id="nome" placeholder="Insira seu nome">
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Insira seu email">
+      <small id="emailHelp" class="form-text text-muted">Nunca iremos compartilhar seu email com ninguém.</small>
+    </div>
+    <div class="form-group">
+      <label for="senha">Senha</label>
+      <input type="password" class="form-control" id="senha" placeholder="Senha">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+    <button id="enquete">Ir para enquete!</button>
+  </form>
+
+  <h1>Ou se cadastre usando o google!</h1>
+
+  <a class="btn btn-block btn-social btn-google" id="login-google">
+    <span class="fa fa-google"></span> Login com google
+  </a>
+
+    <form action="">
+
+    </form>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/pagInicial.js"></script>
+
+  </body>
+</html>
